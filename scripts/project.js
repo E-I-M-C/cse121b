@@ -1,7 +1,7 @@
 // Final Project
 
 // Declared and initialized global variables
-const sonicAPI = "https://langtanium.github.io/sonicthehedgehog-character-api/characters.json";
+const sonicAPI = "https://e-i-m-c.github.io/sonicthehedgehog-character-api/characters.json";
 const sonicCharactersElement = document.getElementById("characters");
 let characterList = [];
 
