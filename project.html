@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+        </ul>
+    </nav>
+    <main id="gridly">
+        <h1>W06: Project</h1>
+        <h2>Sonic the Hedgehog Characters</h2>
+        <select id="filter" title="Choose a data filter.">
+            <!-- Could simplify this with javaScript -->
+            <option value="" disabled selected>Filter Characters</option>
+            <option value="none">None</option>
+            <option value="name">Name (Alphabetically)</option>
+            <option value="height">Height (Shortest to Tallest)</option>
+            <option value="age">Age (Youngest to Oldest)</option>
+            <option value="hero">Good Charcters</option>
+            <option value="villain">Bad Characters</option>
+            <option value="male">Male Characters</option>
+            <option value="female">Female Characters</option>
+            <option value="team_hero">Team Heroes</option>
+            <option value="team_dark">Team Dark</option>
+            <option value="team_rose">Team Rose</option>
+            <option value="team_chaotix">Team Chaotix</option>
+            <option value="team_eggman">Team Eggman</option>
+            <option value="team_babylon">Team Babylon</option>
+            <option value="team_diamond">Team Diamond Cutters</option>
+            <option value="team_unknown">No Team</option>
+            <option value="hedgehog">Hedgehogs</option>
+            <option value="fox">Foxes</option>
+            <option value="cat">Cats</option>
+            <option value="rabbit">Rabbits</option>
+            <option value="badnik">Badniks</option>
+            <option value="echidna">Echidnas</option>
+            <option value="bird">Birds</option>
+            <option value="human">Humans</option>
+            <option value="misc">Misc Species</option>
+            <option value="red">Red Characters</option>
+            <option value="orange">Orange Characters</option>
+            <option value="yellow">Yellow Characters</option>
+            <option value="green">Green Characters</option>
+            <option value="blue">Blue Characters</option>
+            <option value="purple">Purple Characters</option>
+            <option value="pink">Pink Characters</option>
+            <option value="white">White Characters</option>
+            <option value="gray">Gray Characters</option>
+            <option value="black">Black Characters</option>
+        </select>
+        <div id="characters"></div>
+    </main>
+
+    <footer>&copy;<span id="year"></span> | Final Project | CSE 121b</footer>
+    <script src="scripts/main.js"></script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+    <script src="scripts/project.js"></script>
+</body>
+</html>
